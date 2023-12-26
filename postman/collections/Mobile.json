@@ -1,0 +1,3111 @@
+{
+	"info": {
+		"_postman_id": "3affa60b-17a8-42e0-b4ca-27b1b98c5c9c",
+		"name": "Mobile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "1080076-3affa60b-17a8-42e0-b4ca-27b1b98c5c9c"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "apontamento",
+					"item": [
+						{
+							"name": "lote",
+							"item": [
+								{
+									"name": "/api/apontamento/lote",
+									"id": "53b08a89-f04f-4c0c-ac8e-d6d7aac451d8",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"apontamentos\": [\n    {\n      \"id\": \"<uuid>\",\n      \"idResponsavelDesativacao\": \"<uuid>\",\n      \"dataInativacao\": \"<dateTime>\",\n      \"gpsHabilitado\": \"<boolean>\",\n      \"apontamentoOffline\": \"<boolean>\",\n      \"loginOffline\": \"<boolean>\",\n      \"idJornadaRegistro\": \"<uuid>\",\n      \"dataMarcacao\": \"<dateTime>\",\n      \"dataHoraMarcacaoReal\": \"<dateTime>\",\n      \"idTipoEvento\": \"<uuid>\",\n      \"idFuncionario\": \"<uuid>\",\n      \"idNormaColetivaTipoEvento\": \"<uuid>\",\n      \"classificacaoTipoEvento\": 5,\n      \"latitude\": \"<string>\",\n      \"longitude\": \"<string>\",\n      \"acuracidadeLocalizacao\": \"<string>\",\n      \"descricaoTipoEntradaApontamento\": \"<string>\",\n      \"bancoHora\": \"<boolean>\",\n      \"correcao\": \"<boolean>\",\n      \"idApontamentoOriginal\": \"<uuid>\",\n      \"inconsistenciasRegistro\": [\n        {\n          \"tipoInconsistencia\": \"<string>\",\n          \"requerJustificativa\": \"<boolean>\",\n          \"idJustificativa\": \"<uuid>\",\n          \"descricaoJustificativa\": \"<string>\"\n        },\n        {\n          \"tipoInconsistencia\": \"<string>\",\n          \"requerJustificativa\": \"<boolean>\",\n          \"idJustificativa\": \"<uuid>\",\n          \"descricaoJustificativa\": \"<string>\"\n        }\n      ],\n      \"diaSeguinte\": \"<boolean>\",\n      \"bundleNumber\": \"<double>\",\n      \"intermitente\": \"<boolean>\"\n    },\n    {\n      \"id\": \"<uuid>\",\n      \"idResponsavelDesativacao\": \"<uuid>\",\n      \"dataInativacao\": \"<dateTime>\",\n      \"gpsHabilitado\": \"<boolean>\",\n      \"apontamentoOffline\": \"<boolean>\",\n      \"loginOffline\": \"<boolean>\",\n      \"idJornadaRegistro\": \"<uuid>\",\n      \"dataMarcacao\": \"<dateTime>\",\n      \"dataHoraMarcacaoReal\": \"<dateTime>\",\n      \"idTipoEvento\": \"<uuid>\",\n      \"idFuncionario\": \"<uuid>\",\n      \"idNormaColetivaTipoEvento\": \"<uuid>\",\n      \"classificacaoTipoEvento\": 9,\n      \"latitude\": \"<string>\",\n      \"longitude\": \"<string>\",\n      \"acuracidadeLocalizacao\": \"<string>\",\n      \"descricaoTipoEntradaApontamento\": \"<string>\",\n      \"bancoHora\": \"<boolean>\",\n      \"correcao\": \"<boolean>\",\n      \"idApontamentoOriginal\": \"<uuid>\",\n      \"inconsistenciasRegistro\": [\n        {\n          \"tipoInconsistencia\": \"<string>\",\n          \"requerJustificativa\": \"<boolean>\",\n          \"idJustificativa\": \"<uuid>\",\n          \"descricaoJustificativa\": \"<string>\"\n        },\n        {\n          \"tipoInconsistencia\": \"<string>\",\n          \"requerJustificativa\": \"<boolean>\",\n          \"idJustificativa\": \"<uuid>\",\n          \"descricaoJustificativa\": \"<string>\"\n        }\n      ],\n      \"diaSeguinte\": \"<boolean>\",\n      \"bundleNumber\": \"<double>\",\n      \"intermitente\": \"<boolean>\"\n    }\n  ],\n  \"envioEmLote\": \"<boolean>\",\n  \"appTablet\": \"<boolean>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/apontamento/lote",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"apontamento",
+												"lote"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "f4f046ed-8ad0-47f9-95c8-58a015f278c6",
+											"name": "Success",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"apontamentos\": [\n    {\n      \"id\": \"<uuid>\",\n      \"idResponsavelDesativacao\": \"<uuid>\",\n      \"dataInativacao\": \"<dateTime>\",\n      \"gpsHabilitado\": \"<boolean>\",\n      \"apontamentoOffline\": \"<boolean>\",\n      \"loginOffline\": \"<boolean>\",\n      \"idJornadaRegistro\": \"<uuid>\",\n      \"dataMarcacao\": \"<dateTime>\",\n      \"dataHoraMarcacaoReal\": \"<dateTime>\",\n      \"idTipoEvento\": \"<uuid>\",\n      \"idFuncionario\": \"<uuid>\",\n      \"idNormaColetivaTipoEvento\": \"<uuid>\",\n      \"classificacaoTipoEvento\": 5,\n      \"latitude\": \"<string>\",\n      \"longitude\": \"<string>\",\n      \"acuracidadeLocalizacao\": \"<string>\",\n      \"descricaoTipoEntradaApontamento\": \"<string>\",\n      \"bancoHora\": \"<boolean>\",\n      \"correcao\": \"<boolean>\",\n      \"idApontamentoOriginal\": \"<uuid>\",\n      \"inconsistenciasRegistro\": [\n        {\n          \"tipoInconsistencia\": \"<string>\",\n          \"requerJustificativa\": \"<boolean>\",\n          \"idJustificativa\": \"<uuid>\",\n          \"descricaoJustificativa\": \"<string>\"\n        },\n        {\n          \"tipoInconsistencia\": \"<string>\",\n          \"requerJustificativa\": \"<boolean>\",\n          \"idJustificativa\": \"<uuid>\",\n          \"descricaoJustificativa\": \"<string>\"\n        }\n      ],\n      \"diaSeguinte\": \"<boolean>\",\n      \"bundleNumber\": \"<double>\",\n      \"intermitente\": \"<boolean>\"\n    },\n    {\n      \"id\": \"<uuid>\",\n      \"idResponsavelDesativacao\": \"<uuid>\",\n      \"dataInativacao\": \"<dateTime>\",\n      \"gpsHabilitado\": \"<boolean>\",\n      \"apontamentoOffline\": \"<boolean>\",\n      \"loginOffline\": \"<boolean>\",\n      \"idJornadaRegistro\": \"<uuid>\",\n      \"dataMarcacao\": \"<dateTime>\",\n      \"dataHoraMarcacaoReal\": \"<dateTime>\",\n      \"idTipoEvento\": \"<uuid>\",\n      \"idFuncionario\": \"<uuid>\",\n      \"idNormaColetivaTipoEvento\": \"<uuid>\",\n      \"classificacaoTipoEvento\": 9,\n      \"latitude\": \"<string>\",\n      \"longitude\": \"<string>\",\n      \"acuracidadeLocalizacao\": \"<string>\",\n      \"descricaoTipoEntradaApontamento\": \"<string>\",\n      \"bancoHora\": \"<boolean>\",\n      \"correcao\": \"<boolean>\",\n      \"idApontamentoOriginal\": \"<uuid>\",\n      \"inconsistenciasRegistro\": [\n        {\n          \"tipoInconsistencia\": \"<string>\",\n          \"requerJustificativa\": \"<boolean>\",\n          \"idJustificativa\": \"<uuid>\",\n          \"descricaoJustificativa\": \"<string>\"\n        },\n        {\n          \"tipoInconsistencia\": \"<string>\",\n          \"requerJustificativa\": \"<boolean>\",\n          \"idJustificativa\": \"<uuid>\",\n          \"descricaoJustificativa\": \"<string>\"\n        }\n      ],\n      \"diaSeguinte\": \"<boolean>\",\n      \"bundleNumber\": \"<double>\",\n      \"intermitente\": \"<boolean>\"\n    }\n  ],\n  \"envioEmLote\": \"<boolean>\",\n  \"appTablet\": \"<boolean>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/apontamento/lote",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"apontamento",
+														"lote"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "e9b3df90-1cec-4131-a8ef-910d2fe51fb6"
+						},
+						{
+							"name": "listagem",
+							"item": [
+								{
+									"name": "ultima-jornada",
+									"item": [
+										{
+											"name": "/api/apontamento/listagem/ultima-jornada",
+											"id": "21bca0a8-b7d3-4ca9-b731-68e90525af66",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/apontamento/listagem/ultima-jornada?idUsuario=<uuid>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"apontamento",
+														"listagem",
+														"ultima-jornada"
+													],
+													"query": [
+														{
+															"key": "idUsuario",
+															"value": "<uuid>"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "34e39f58-0afe-46ff-bae2-f764b9805f1b",
+													"name": "Success",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"description": "Added as a part of security scheme: apikey",
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/apontamento/listagem/ultima-jornada?idUsuario=<uuid>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"apontamento",
+																"listagem",
+																"ultima-jornada"
+															],
+															"query": [
+																{
+																	"key": "idUsuario",
+																	"value": "<uuid>"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									],
+									"id": "d0efe8ca-29f7-49ab-a777-6889dbfc9728"
+								},
+								{
+									"name": "/api/apontamento/listagem",
+									"id": "052d83d0-c7ed-40e5-8954-b4783ce2623a",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/apontamento/listagem?dataReferencia=<dateTime>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"apontamento",
+												"listagem"
+											],
+											"query": [
+												{
+													"key": "dataReferencia",
+													"value": "<dateTime>"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "4352b62e-4355-40fe-a72c-03774a44250b",
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/apontamento/listagem?dataReferencia=<dateTime>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"apontamento",
+														"listagem"
+													],
+													"query": [
+														{
+															"key": "dataReferencia",
+															"value": "<dateTime>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "abe3e053-4021-4ba7-816e-0c61956dd8cd"
+						},
+						{
+							"name": "verificar",
+							"item": [
+								{
+									"name": "/api/apontamento/verificar",
+									"id": "bc42dc9e-3cb8-4208-be71-e40387be9172",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "[\n  {\n    \"dataMarcacao\": \"<dateTime>\",\n    \"idTipoEvento\": \"<uuid>\",\n    \"idFuncionario\": \"<uuid>\",\n    \"idNormaColetivaTipoEvento\": \"<uuid>\",\n    \"classificacaoTipoEvento\": 8\n  },\n  {\n    \"dataMarcacao\": \"<dateTime>\",\n    \"idTipoEvento\": \"<uuid>\",\n    \"idFuncionario\": \"<uuid>\",\n    \"idNormaColetivaTipoEvento\": \"<uuid>\",\n    \"classificacaoTipoEvento\": 0\n  }\n]",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/apontamento/verificar",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"apontamento",
+												"verificar"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "65b4e00e-01d6-4ee6-bb82-19b22f69f05d",
+											"name": "Success",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "[\n  {\n    \"dataMarcacao\": \"<dateTime>\",\n    \"idTipoEvento\": \"<uuid>\",\n    \"idFuncionario\": \"<uuid>\",\n    \"idNormaColetivaTipoEvento\": \"<uuid>\",\n    \"classificacaoTipoEvento\": 8\n  },\n  {\n    \"dataMarcacao\": \"<dateTime>\",\n    \"idTipoEvento\": \"<uuid>\",\n    \"idFuncionario\": \"<uuid>\",\n    \"idNormaColetivaTipoEvento\": \"<uuid>\",\n    \"classificacaoTipoEvento\": 0\n  }\n]",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/apontamento/verificar",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"apontamento",
+														"verificar"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "5b351ce7-f0ca-4596-9cad-10b8dd70c009"
+						},
+						{
+							"name": "justificativa",
+							"item": [
+								{
+									"name": "combo",
+									"item": [
+										{
+											"name": "/api/apontamento/justificativa/combo",
+											"id": "f9f001df-133c-4d4e-9bd3-142674ff7f72",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/apontamento/justificativa/combo?termo=<string>&somenteAtivos=<boolean>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"apontamento",
+														"justificativa",
+														"combo"
+													],
+													"query": [
+														{
+															"key": "termo",
+															"value": "<string>"
+														},
+														{
+															"key": "somenteAtivos",
+															"value": "<boolean>"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "15839dea-72ab-472f-8458-73d9f1188688",
+													"name": "Success",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"description": "Added as a part of security scheme: apikey",
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/apontamento/justificativa/combo?termo=<string>&somenteAtivos=<boolean>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"apontamento",
+																"justificativa",
+																"combo"
+															],
+															"query": [
+																{
+																	"key": "termo",
+																	"value": "<string>"
+																},
+																{
+																	"key": "somenteAtivos",
+																	"value": "<boolean>"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									],
+									"id": "cba5123e-5752-45ea-8384-c35a5352abe6"
+								}
+							],
+							"id": "95326241-9b5f-47bd-b679-d29b3049f014"
+						},
+						{
+							"name": "desativacao",
+							"item": [
+								{
+									"name": "/api/apontamento/desativacao",
+									"id": "2e7bf100-8424-4c16-b62c-da15aa8f6bdf",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"idApontamentoIntegracao\": \"<uuid>\",\n  \"idResponsavelDesativacao\": \"<uuid>\",\n  \"dataDesativacao\": \"<dateTime>\",\n  \"justificativa\": {\n    \"tipoInconsistencia\": \"<string>\",\n    \"requerJustificativa\": \"<boolean>\",\n    \"idJustificativa\": \"<uuid>\",\n    \"descricaoJustificativa\": \"<string>\"\n  }\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/apontamento/desativacao",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"apontamento",
+												"desativacao"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "fea0f981-9517-472c-92c6-dfec0cb03801",
+											"name": "Success",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"idApontamentoIntegracao\": \"<uuid>\",\n  \"idResponsavelDesativacao\": \"<uuid>\",\n  \"dataDesativacao\": \"<dateTime>\",\n  \"justificativa\": {\n    \"tipoInconsistencia\": \"<string>\",\n    \"requerJustificativa\": \"<boolean>\",\n    \"idJustificativa\": \"<uuid>\",\n    \"descricaoJustificativa\": \"<string>\"\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/apontamento/desativacao",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"apontamento",
+														"desativacao"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "80a2c39c-1f29-452e-be43-9dbb746c15be"
+						},
+						{
+							"name": "validar-apontamentos",
+							"item": [
+								{
+									"name": "/api/apontamento/validar-apontamentos",
+									"id": "9f6a6055-a980-4003-8f13-f515eac5ea00",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "[\n  \"<uuid>\",\n  \"<uuid>\"\n]",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/apontamento/validar-apontamentos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"apontamento",
+												"validar-apontamentos"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "8052f9da-15ab-48d0-aa52-51fb6fd2ad6f",
+											"name": "Success",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "[\n  \"<uuid>\",\n  \"<uuid>\"\n]",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/apontamento/validar-apontamentos",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"apontamento",
+														"validar-apontamentos"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "a0ad88fc-97b0-4cb4-8cce-5faf2121dbfd"
+						}
+					],
+					"id": "43a44789-5135-494c-822b-d6b3c6612f9b"
+				},
+				{
+					"name": "bootstatus",
+					"item": [
+						{
+							"name": "/api/bootstatus",
+							"id": "9ab84cbd-5243-4193-9f1b-41db39f74741",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/bootstatus",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"bootstatus"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "6b0f9399-d571-4a97-8a5a-ed9ce45f81ee",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/bootstatus",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"bootstatus"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "f81084e7-43ec-4fe7-a12e-1737b3172220"
+				},
+				{
+					"name": "calendario-evento",
+					"item": [
+						{
+							"name": "/api/calendario-evento",
+							"id": "9936f752-5cdc-4039-a070-0c21fd1cd7f6",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/calendario-evento",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"calendario-evento"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "9f69227f-1987-45c3-9424-6eab64d885f4",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/calendario-evento",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"calendario-evento"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "be1f3167-794b-4279-868f-af2de8384594"
+				},
+				{
+					"name": "cartao-ponto",
+					"item": [
+						{
+							"name": "usuario",
+							"item": [
+								{
+									"name": "/api/cartao-ponto/usuario",
+									"id": "4b973bda-cdef-495c-993c-3090fd1e8307",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/cartao-ponto/usuario?IdUsuario=<uuid>&Ano=<integer>&Mes=<integer>&DataInicio=<dateTime>&DataFim=<dateTime>&Original=<boolean>&Exportar=<boolean>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"cartao-ponto",
+												"usuario"
+											],
+											"query": [
+												{
+													"key": "IdUsuario",
+													"value": "<uuid>"
+												},
+												{
+													"key": "Ano",
+													"value": "<integer>"
+												},
+												{
+													"key": "Mes",
+													"value": "<integer>"
+												},
+												{
+													"key": "DataInicio",
+													"value": "<dateTime>"
+												},
+												{
+													"key": "DataFim",
+													"value": "<dateTime>"
+												},
+												{
+													"key": "Original",
+													"value": "<boolean>"
+												},
+												{
+													"key": "Exportar",
+													"value": "<boolean>"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "1ba0a66f-db7d-4138-b149-cf23f178cdd5",
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/cartao-ponto/usuario?IdUsuario=<uuid>&Ano=<integer>&Mes=<integer>&DataInicio=<dateTime>&DataFim=<dateTime>&Original=<boolean>&Exportar=<boolean>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"cartao-ponto",
+														"usuario"
+													],
+													"query": [
+														{
+															"key": "IdUsuario",
+															"value": "<uuid>"
+														},
+														{
+															"key": "Ano",
+															"value": "<integer>"
+														},
+														{
+															"key": "Mes",
+															"value": "<integer>"
+														},
+														{
+															"key": "DataInicio",
+															"value": "<dateTime>"
+														},
+														{
+															"key": "DataFim",
+															"value": "<dateTime>"
+														},
+														{
+															"key": "Original",
+															"value": "<boolean>"
+														},
+														{
+															"key": "Exportar",
+															"value": "<boolean>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "5bcf754c-cf97-4227-a44a-cfe3e33b7f26"
+						},
+						{
+							"name": "jornada",
+							"item": [
+								{
+									"name": "/api/cartao-ponto/jornada",
+									"id": "7860306d-a54c-4f95-b14f-281a11ebd685",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/cartao-ponto/jornada?id=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"cartao-ponto",
+												"jornada"
+											],
+											"query": [
+												{
+													"key": "id",
+													"value": "<string>"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "01594787-25c3-400f-9a9a-d90fa2c9d11b",
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/cartao-ponto/jornada?id=<string>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"cartao-ponto",
+														"jornada"
+													],
+													"query": [
+														{
+															"key": "id",
+															"value": "<string>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "8d1a83c9-a997-4ff5-99e4-232707223ce7"
+						},
+						{
+							"name": "exportar",
+							"item": [
+								{
+									"name": "/api/cartao-ponto/exportar",
+									"id": "f45dcd96-f177-4127-a99a-97b338407a52",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/cartao-ponto/exportar?IdFuncionario=<uuid>&AnoReferencia=<integer>&MesReferencia=<integer>&DataInicio=<dateTime>&DataFim=<dateTime>&ExibirSimplificado=<boolean>&ExibirResumo=<boolean>&ExibirAnalitico=<boolean>&LeiMotorista=<boolean>&Original=<boolean>&RegraMP=<boolean>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"cartao-ponto",
+												"exportar"
+											],
+											"query": [
+												{
+													"key": "IdFuncionario",
+													"value": "<uuid>"
+												},
+												{
+													"key": "AnoReferencia",
+													"value": "<integer>"
+												},
+												{
+													"key": "MesReferencia",
+													"value": "<integer>"
+												},
+												{
+													"key": "DataInicio",
+													"value": "<dateTime>"
+												},
+												{
+													"key": "DataFim",
+													"value": "<dateTime>"
+												},
+												{
+													"key": "ExibirSimplificado",
+													"value": "<boolean>"
+												},
+												{
+													"key": "ExibirResumo",
+													"value": "<boolean>"
+												},
+												{
+													"key": "ExibirAnalitico",
+													"value": "<boolean>"
+												},
+												{
+													"key": "LeiMotorista",
+													"value": "<boolean>"
+												},
+												{
+													"key": "Original",
+													"value": "<boolean>"
+												},
+												{
+													"key": "RegraMP",
+													"value": "<boolean>"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "fff736f2-5403-4ceb-806b-3f078d5a45cd",
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/cartao-ponto/exportar?IdFuncionario=<uuid>&AnoReferencia=<integer>&MesReferencia=<integer>&DataInicio=<dateTime>&DataFim=<dateTime>&ExibirSimplificado=<boolean>&ExibirResumo=<boolean>&ExibirAnalitico=<boolean>&LeiMotorista=<boolean>&Original=<boolean>&RegraMP=<boolean>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"cartao-ponto",
+														"exportar"
+													],
+													"query": [
+														{
+															"key": "IdFuncionario",
+															"value": "<uuid>"
+														},
+														{
+															"key": "AnoReferencia",
+															"value": "<integer>"
+														},
+														{
+															"key": "MesReferencia",
+															"value": "<integer>"
+														},
+														{
+															"key": "DataInicio",
+															"value": "<dateTime>"
+														},
+														{
+															"key": "DataFim",
+															"value": "<dateTime>"
+														},
+														{
+															"key": "ExibirSimplificado",
+															"value": "<boolean>"
+														},
+														{
+															"key": "ExibirResumo",
+															"value": "<boolean>"
+														},
+														{
+															"key": "ExibirAnalitico",
+															"value": "<boolean>"
+														},
+														{
+															"key": "LeiMotorista",
+															"value": "<boolean>"
+														},
+														{
+															"key": "Original",
+															"value": "<boolean>"
+														},
+														{
+															"key": "RegraMP",
+															"value": "<boolean>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "1747b11d-bbe2-46fc-a617-0c01371f52ec"
+						},
+						{
+							"name": "/api/cartao-ponto",
+							"id": "bda7e5f8-64ac-4e6c-a8b8-bb5ed075165b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/cartao-ponto?IdUsuario=<uuid>&Ano=<integer>&Mes=<integer>&DataInicio=<dateTime>&DataFim=<dateTime>&Original=<boolean>&Exportar=<boolean>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"cartao-ponto"
+									],
+									"query": [
+										{
+											"key": "IdUsuario",
+											"value": "<uuid>"
+										},
+										{
+											"key": "Ano",
+											"value": "<integer>"
+										},
+										{
+											"key": "Mes",
+											"value": "<integer>"
+										},
+										{
+											"key": "DataInicio",
+											"value": "<dateTime>"
+										},
+										{
+											"key": "DataFim",
+											"value": "<dateTime>"
+										},
+										{
+											"key": "Original",
+											"value": "<boolean>"
+										},
+										{
+											"key": "Exportar",
+											"value": "<boolean>"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "a959cb4a-58cc-47f6-95e5-9cdbef39d6db",
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/cartao-ponto?IdUsuario=<uuid>&Ano=<integer>&Mes=<integer>&DataInicio=<dateTime>&DataFim=<dateTime>&Original=<boolean>&Exportar=<boolean>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"cartao-ponto"
+											],
+											"query": [
+												{
+													"key": "IdUsuario",
+													"value": "<uuid>"
+												},
+												{
+													"key": "Ano",
+													"value": "<integer>"
+												},
+												{
+													"key": "Mes",
+													"value": "<integer>"
+												},
+												{
+													"key": "DataInicio",
+													"value": "<dateTime>"
+												},
+												{
+													"key": "DataFim",
+													"value": "<dateTime>"
+												},
+												{
+													"key": "Original",
+													"value": "<boolean>"
+												},
+												{
+													"key": "Exportar",
+													"value": "<boolean>"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "64e6726c-ef23-4742-b736-cbdeddc2f2f5"
+				},
+				{
+					"name": "escala-horario",
+					"item": [
+						{
+							"name": "/api/escala-horario",
+							"id": "3bc9ea30-036a-4690-b09f-e9641aff3c42",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/escala-horario?dataReferencia=<dateTime>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"escala-horario"
+									],
+									"query": [
+										{
+											"key": "dataReferencia",
+											"value": "<dateTime>"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "be61123d-d77d-44cd-95c6-8c9de9f69d21",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/escala-horario?dataReferencia=<dateTime>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"escala-horario"
+											],
+											"query": [
+												{
+													"key": "dataReferencia",
+													"value": "<dateTime>"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "6e9ae039-abe0-445c-bdbe-aa098b3db81d"
+				},
+				{
+					"name": "log",
+					"item": [
+						{
+							"name": "apontamentos",
+							"item": [
+								{
+									"name": "sincronizados",
+									"item": [
+										{
+											"name": "/api/log/apontamentos/sincronizados",
+											"id": "778ca291-79c7-4f7e-9cdb-269920263894",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/log/apontamentos/sincronizados?QuantidadeSincronizados=<integer>&QuantidadeNaoSincronizados=<integer>&IdsSincronizados=<string>&IdsSincronizados=<string>&DeviceInfo.DeviceID=<string>&DeviceInfo.Brand=<string>&DeviceInfo.Model=<string>&DeviceInfo.SystemName=<string>&DeviceInfo.SystemVersion=<string>&DeviceInfo.BundleID=<string>&DeviceInfo.BuildNumber=<string>&DeviceInfo.AppVersion=<string>&CacheClearedDate=<string>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"log",
+														"apontamentos",
+														"sincronizados"
+													],
+													"query": [
+														{
+															"key": "QuantidadeSincronizados",
+															"value": "<integer>"
+														},
+														{
+															"key": "QuantidadeNaoSincronizados",
+															"value": "<integer>"
+														},
+														{
+															"key": "IdsSincronizados",
+															"value": "<string>"
+														},
+														{
+															"key": "IdsSincronizados",
+															"value": "<string>"
+														},
+														{
+															"key": "DeviceInfo.DeviceID",
+															"value": "<string>"
+														},
+														{
+															"key": "DeviceInfo.Brand",
+															"value": "<string>"
+														},
+														{
+															"key": "DeviceInfo.Model",
+															"value": "<string>"
+														},
+														{
+															"key": "DeviceInfo.SystemName",
+															"value": "<string>"
+														},
+														{
+															"key": "DeviceInfo.SystemVersion",
+															"value": "<string>"
+														},
+														{
+															"key": "DeviceInfo.BundleID",
+															"value": "<string>"
+														},
+														{
+															"key": "DeviceInfo.BuildNumber",
+															"value": "<string>"
+														},
+														{
+															"key": "DeviceInfo.AppVersion",
+															"value": "<string>"
+														},
+														{
+															"key": "CacheClearedDate",
+															"value": "<string>"
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "6021522a-30a4-4785-a705-914b6473af2a",
+													"name": "Success",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"description": "Added as a part of security scheme: apikey",
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/log/apontamentos/sincronizados?QuantidadeSincronizados=<integer>&QuantidadeNaoSincronizados=<integer>&IdsSincronizados=<string>&DeviceInfo.DeviceID=<string>&DeviceInfo.Brand=<string>&DeviceInfo.Model=<string>&DeviceInfo.SystemName=<string>&DeviceInfo.SystemVersion=<string>&DeviceInfo.BundleID=<string>&DeviceInfo.BuildNumber=<string>&DeviceInfo.AppVersion=<string>&CacheClearedDate=<string>",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"log",
+																"apontamentos",
+																"sincronizados"
+															],
+															"query": [
+																{
+																	"key": "QuantidadeSincronizados",
+																	"value": "<integer>"
+																},
+																{
+																	"key": "QuantidadeNaoSincronizados",
+																	"value": "<integer>"
+																},
+																{
+																	"key": "IdsSincronizados",
+																	"value": "<string>"
+																},
+																{
+																	"key": "DeviceInfo.DeviceID",
+																	"value": "<string>"
+																},
+																{
+																	"key": "DeviceInfo.Brand",
+																	"value": "<string>"
+																},
+																{
+																	"key": "DeviceInfo.Model",
+																	"value": "<string>"
+																},
+																{
+																	"key": "DeviceInfo.SystemName",
+																	"value": "<string>"
+																},
+																{
+																	"key": "DeviceInfo.SystemVersion",
+																	"value": "<string>"
+																},
+																{
+																	"key": "DeviceInfo.BundleID",
+																	"value": "<string>"
+																},
+																{
+																	"key": "DeviceInfo.BuildNumber",
+																	"value": "<string>"
+																},
+																{
+																	"key": "DeviceInfo.AppVersion",
+																	"value": "<string>"
+																},
+																{
+																	"key": "CacheClearedDate",
+																	"value": "<string>"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									],
+									"id": "f79ebcdc-4f78-4a00-9578-3c75f0fcb244"
+								}
+							],
+							"id": "2f0cd7ab-b9f7-4132-a80b-25a352a1873f"
+						}
+					],
+					"id": "84819393-f88a-4e9f-8258-34f48667d245"
+				},
+				{
+					"name": "notificacao",
+					"item": [
+						{
+							"name": "nao-lidas",
+							"item": [
+								{
+									"name": "/api/notificacao/nao-lidas",
+									"id": "4cde3cd6-cb8d-4344-be31-456aa1c6b14e",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/notificacao/nao-lidas",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"notificacao",
+												"nao-lidas"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "dd702f29-76c2-4470-baf1-6859f8abb7c0",
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/notificacao/nao-lidas",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"notificacao",
+														"nao-lidas"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "631f8f48-cea2-4647-abb0-fecf26148bcd"
+						},
+						{
+							"name": "lista",
+							"item": [
+								{
+									"name": "/api/notificacao/lista",
+									"id": "d9da8946-0fb0-40cd-96b1-ede913d90d4f",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/notificacao/lista",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"notificacao",
+												"lista"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "8f5b3bc0-076e-4dc7-a27b-57f96176b1e0",
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/notificacao/lista",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"notificacao",
+														"lista"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "64fcf98b-f3fe-4e4a-adbb-e8d8fd897df0"
+						},
+						{
+							"name": "recebidas",
+							"item": [
+								{
+									"name": "/api/notificacao/recebidas",
+									"id": "9b6952ce-2fb5-4fad-8f44-371bf31ea750",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/notificacao/recebidas?Titulo=<string>&Descricao=<string>&Usuarios=<uuid>&Usuarios=<uuid>&Grupos=<uuid>&Grupos=<uuid>&CentrosCusto=<uuid>&CentrosCusto=<uuid>&DataInicio=<dateTime>&DataFim=<dateTime>&Ativo=<boolean>&Inativo=<boolean>&Page=<integer>&PageSize=<integer>&OrderColumn=<string>&OrderDirection=<boolean>&Export=<boolean>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"notificacao",
+												"recebidas"
+											],
+											"query": [
+												{
+													"key": "Titulo",
+													"value": "<string>"
+												},
+												{
+													"key": "Descricao",
+													"value": "<string>"
+												},
+												{
+													"key": "Usuarios",
+													"value": "<uuid>"
+												},
+												{
+													"key": "Usuarios",
+													"value": "<uuid>"
+												},
+												{
+													"key": "Grupos",
+													"value": "<uuid>"
+												},
+												{
+													"key": "Grupos",
+													"value": "<uuid>"
+												},
+												{
+													"key": "CentrosCusto",
+													"value": "<uuid>"
+												},
+												{
+													"key": "CentrosCusto",
+													"value": "<uuid>"
+												},
+												{
+													"key": "DataInicio",
+													"value": "<dateTime>"
+												},
+												{
+													"key": "DataFim",
+													"value": "<dateTime>"
+												},
+												{
+													"key": "Ativo",
+													"value": "<boolean>"
+												},
+												{
+													"key": "Inativo",
+													"value": "<boolean>"
+												},
+												{
+													"key": "Page",
+													"value": "<integer>"
+												},
+												{
+													"key": "PageSize",
+													"value": "<integer>"
+												},
+												{
+													"key": "OrderColumn",
+													"value": "<string>"
+												},
+												{
+													"key": "OrderDirection",
+													"value": "<boolean>"
+												},
+												{
+													"key": "Export",
+													"value": "<boolean>"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "30defbd9-0815-4d33-b4a1-28d8f969dcc7",
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/notificacao/recebidas?Titulo=<string>&Descricao=<string>&Usuarios=<uuid>&Grupos=<uuid>&CentrosCusto=<uuid>&DataInicio=<dateTime>&DataFim=<dateTime>&Ativo=<boolean>&Inativo=<boolean>&Page=<integer>&PageSize=<integer>&OrderColumn=<string>&OrderDirection=<boolean>&Export=<boolean>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"notificacao",
+														"recebidas"
+													],
+													"query": [
+														{
+															"key": "Titulo",
+															"value": "<string>"
+														},
+														{
+															"key": "Descricao",
+															"value": "<string>"
+														},
+														{
+															"key": "Usuarios",
+															"value": "<uuid>"
+														},
+														{
+															"key": "Grupos",
+															"value": "<uuid>"
+														},
+														{
+															"key": "CentrosCusto",
+															"value": "<uuid>"
+														},
+														{
+															"key": "DataInicio",
+															"value": "<dateTime>"
+														},
+														{
+															"key": "DataFim",
+															"value": "<dateTime>"
+														},
+														{
+															"key": "Ativo",
+															"value": "<boolean>"
+														},
+														{
+															"key": "Inativo",
+															"value": "<boolean>"
+														},
+														{
+															"key": "Page",
+															"value": "<integer>"
+														},
+														{
+															"key": "PageSize",
+															"value": "<integer>"
+														},
+														{
+															"key": "OrderColumn",
+															"value": "<string>"
+														},
+														{
+															"key": "OrderDirection",
+															"value": "<boolean>"
+														},
+														{
+															"key": "Export",
+															"value": "<boolean>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "100d712f-5cbf-4960-a693-badbb0bb0bda"
+						},
+						{
+							"name": "marcacao-leitura",
+							"item": [
+								{
+									"name": "{id}",
+									"item": [
+										{
+											"name": "/api/notificacao/marcacao-leitura/:id",
+											"id": "fa07ab13-7e35-4b4c-be0f-193f42ff6d97",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "PUT",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/notificacao/marcacao-leitura/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"notificacao",
+														"marcacao-leitura",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<uuid>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "e427e515-cf52-487c-828c-077171afcb2c",
+													"name": "Success",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [
+															{
+																"description": "Added as a part of security scheme: apikey",
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/notificacao/marcacao-leitura/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"notificacao",
+																"marcacao-leitura",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									],
+									"id": "376b0a85-e1f5-4d3c-aa07-2e2f9f6e45fc"
+								}
+							],
+							"id": "6ba97387-9ee4-436c-aef5-46f120a8c024"
+						},
+						{
+							"name": "remocao-resumo",
+							"item": [
+								{
+									"name": "{id}",
+									"item": [
+										{
+											"name": "/api/notificacao/remocao-resumo/:id",
+											"id": "c66eeaae-d809-4e20-8fa6-5111d44506d6",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "PUT",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/notificacao/remocao-resumo/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"notificacao",
+														"remocao-resumo",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<uuid>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "5f2db087-643d-4cc0-b8dc-7d4883154e37",
+													"name": "Success",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [
+															{
+																"description": "Added as a part of security scheme: apikey",
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/api/notificacao/remocao-resumo/:id",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"notificacao",
+																"remocao-resumo",
+																":id"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									],
+									"id": "c4155f59-b6f3-4459-b834-213b5d7d72cf"
+								}
+							],
+							"id": "81c7f4cc-07f3-4338-bc6a-da35d2390b0e"
+						}
+					],
+					"id": "b33079d3-5294-4e79-83cb-b6262ca526d0"
+				},
+				{
+					"name": "ocorrencia",
+					"item": [
+						{
+							"name": "salvar-arquivo",
+							"item": [
+								{
+									"name": "/api/ocorrencia/salvar-arquivo",
+									"id": "af9421a8-ffa9-4cba-8662-f224601f9844",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "multipart/form-data"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "Arquivo",
+													"value": "<string>",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/ocorrencia/salvar-arquivo?TipoAnexo=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"ocorrencia",
+												"salvar-arquivo"
+											],
+											"query": [
+												{
+													"key": "TipoAnexo",
+													"value": "<string>"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "26f9bc1c-7a20-4fab-b60f-93024d31d363",
+											"name": "Success",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "multipart/form-data"
+													},
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"body": {
+													"mode": "formdata",
+													"formdata": [
+														{
+															"key": "Arquivo",
+															"value": "<string>",
+															"type": "text"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/ocorrencia/salvar-arquivo?TipoAnexo=<string>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"ocorrencia",
+														"salvar-arquivo"
+													],
+													"query": [
+														{
+															"key": "TipoAnexo",
+															"value": "<string>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "34376236-0204-459f-b3e4-4fa05718ec52"
+						},
+						{
+							"name": "/api/ocorrencia",
+							"id": "b504efa5-91ef-41f1-8ed8-6310f99abcdf",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"idArquivoAnexoDados\": \"<uuid>\",\n  \"horaInicial\": \"<string>\",\n  \"horaFinal\": \"<string>\",\n  \"idTipoOcorrencia\": \"<uuid>\",\n  \"idFuncionario\": \"<uuid>\",\n  \"dataInicioVigencia\": \"<dateTime>\",\n  \"dataFimVigencia\": \"<dateTime>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/ocorrencia",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"ocorrencia"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "b92c3903-adfc-4c39-b483-5df2e9cda047",
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"idArquivoAnexoDados\": \"<uuid>\",\n  \"horaInicial\": \"<string>\",\n  \"horaFinal\": \"<string>\",\n  \"idTipoOcorrencia\": \"<uuid>\",\n  \"idFuncionario\": \"<uuid>\",\n  \"dataInicioVigencia\": \"<dateTime>\",\n  \"dataFimVigencia\": \"<dateTime>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/ocorrencia",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"ocorrencia"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "d2e14315-8615-4256-855c-0d4f037526a9"
+				},
+				{
+					"name": "termo-uso",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "aceite",
+									"item": [
+										{
+											"name": "/api/termo-uso/:id/aceite",
+											"id": "9e9fab7b-0bff-479e-8ea4-f6a3b7f639bc",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"login\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/termo-uso/:id/aceite",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"termo-uso",
+														":id",
+														"aceite"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<uuid>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"id": "754748fe-b6d1-4782-a68f-857103e30585",
+													"name": "Success",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															},
+															{
+																"description": "Added as a part of security scheme: apikey",
+																"key": "Authorization",
+																"value": "<API Key>"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"login\": \"<string>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{baseUrl}}/api/termo-uso/:id/aceite",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"termo-uso",
+																":id",
+																"aceite"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									],
+									"id": "1b25c80a-4e31-4035-b323-58baa6700e11"
+								}
+							],
+							"id": "057bed95-ee5c-493d-ab5c-feb555d0dee2"
+						},
+						{
+							"name": "/api/termo-uso",
+							"id": "9643bb51-19ca-47ec-a7c2-730e19c424cf",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/termo-uso?login=<string>&dispositivo=<string>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"termo-uso"
+									],
+									"query": [
+										{
+											"key": "login",
+											"value": "<string>"
+										},
+										{
+											"key": "dispositivo",
+											"value": "<string>"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "1bc36a75-df57-4500-8a22-029ff458259c",
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/api/termo-uso?login=<string>&dispositivo=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"termo-uso"
+											],
+											"query": [
+												{
+													"key": "login",
+													"value": "<string>"
+												},
+												{
+													"key": "dispositivo",
+													"value": "<string>"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "f8783a8b-4fe8-4ceb-8132-1f06cc8c9912"
+				},
+				{
+					"name": "tipos-eventos",
+					"item": [
+						{
+							"name": "{tipoEntrada}",
+							"item": [
+								{
+									"name": "/api/tipos-eventos/:tipoEntrada",
+									"id": "39066679-b305-4da9-8245-625fbef4a4bb",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/tipos-eventos/:tipoEntrada",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"tipos-eventos",
+												":tipoEntrada"
+											],
+											"variable": [
+												{
+													"key": "tipoEntrada",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "bc646926-34d3-4f53-a3f8-54e5391fba88",
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/tipos-eventos/:tipoEntrada",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"tipos-eventos",
+														":tipoEntrada"
+													],
+													"variable": [
+														{
+															"key": "tipoEntrada"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "bd378085-1a02-453f-93e8-32539dc5f16e"
+						},
+						{
+							"name": "indicadores",
+							"item": [
+								{
+									"name": "/api/tipos-eventos/indicadores",
+									"id": "819830ae-5fe8-4164-b294-2ca5e6b229a1",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/tipos-eventos/indicadores",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"tipos-eventos",
+												"indicadores"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "a283f335-1b6a-4416-9ffc-ea87449ec5f1",
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/tipos-eventos/indicadores",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"tipos-eventos",
+														"indicadores"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "3093cc5d-e7da-48f8-8f80-a6e42ce21e0c"
+						}
+					],
+					"id": "23dd9ccd-474c-4140-9033-4dcc6fcc632e"
+				},
+				{
+					"name": "usuarios",
+					"item": [
+						{
+							"name": "login",
+							"item": [
+								{
+									"name": "/api/usuarios/login",
+									"id": "32ca64f8-95e6-409e-83ac-3aa7f35eec62",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"login\": \"<string>\",\n  \"senha\": \"<string>\",\n  \"captcha\": {\n    \"parcelas\": [\n      \"<integer>\",\n      \"<integer>\"\n    ],\n    \"soma\": \"<integer>\"\n  },\n  \"localLogin\": \"<string>\",\n  \"notificacoes\": [\n    {\n      \"mensagem\": \"<string>\",\n      \"informacoesAdicionais\": {\n        \"fugiat_4\": \"<string>\"\n      }\n    },\n    {\n      \"mensagem\": \"<string>\",\n      \"informacoesAdicionais\": {\n        \"ad_5\": \"<string>\"\n      }\n    }\n  ],\n  \"mensagens\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"invalido\": \"<boolean>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/usuarios/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"usuarios",
+												"login"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "fa36dfa1-29f0-4756-9385-d5415a55107c",
+											"name": "Success",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"login\": \"<string>\",\n  \"senha\": \"<string>\",\n  \"captcha\": {\n    \"parcelas\": [\n      \"<integer>\",\n      \"<integer>\"\n    ],\n    \"soma\": \"<integer>\"\n  },\n  \"localLogin\": \"<string>\",\n  \"notificacoes\": [\n    {\n      \"mensagem\": \"<string>\",\n      \"informacoesAdicionais\": {\n        \"fugiat_4\": \"<string>\"\n      }\n    },\n    {\n      \"mensagem\": \"<string>\",\n      \"informacoesAdicionais\": {\n        \"ad_5\": \"<string>\"\n      }\n    }\n  ],\n  \"mensagens\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"invalido\": \"<boolean>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/usuarios/login",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"usuarios",
+														"login"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "c14475a2-9355-47cc-bb79-320f825030c8"
+						},
+						{
+							"name": "identificar",
+							"item": [
+								{
+									"name": "/api/usuarios/identificar",
+									"id": "fa89199d-9da7-44d6-b70c-d12884cc1a49",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"login\": \"<string>\",\n  \"primeiroAcesso\": \"<boolean>\",\n  \"captcha\": {\n    \"parcelas\": [\n      \"<integer>\",\n      \"<integer>\"\n    ],\n    \"soma\": \"<integer>\"\n  },\n  \"tipoEntrada\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/usuarios/identificar",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"usuarios",
+												"identificar"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "13f27d48-e1a1-478c-b513-c35e7b595792",
+											"name": "Success",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"login\": \"<string>\",\n  \"primeiroAcesso\": \"<boolean>\",\n  \"captcha\": {\n    \"parcelas\": [\n      \"<integer>\",\n      \"<integer>\"\n    ],\n    \"soma\": \"<integer>\"\n  },\n  \"tipoEntrada\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/usuarios/identificar",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"usuarios",
+														"identificar"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "31718643-e9c2-4568-be9b-3a12d65b016e"
+						},
+						{
+							"name": "validar-identificacao",
+							"item": [
+								{
+									"name": "/api/usuarios/validar-identificacao",
+									"id": "1d233479-201f-48d6-b938-53ee38c75c1e",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"login\": \"<string>\",\n  \"respostas\": [\n    {\n      \"id\": \"<uuid>\",\n      \"resposta\": \"<string>\"\n    },\n    {\n      \"id\": \"<uuid>\",\n      \"resposta\": \"<string>\"\n    }\n  ]\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/usuarios/validar-identificacao",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"usuarios",
+												"validar-identificacao"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "edc2a248-9f7d-4cc2-a3bd-16388fc3cda6",
+											"name": "Success",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"login\": \"<string>\",\n  \"respostas\": [\n    {\n      \"id\": \"<uuid>\",\n      \"resposta\": \"<string>\"\n    },\n    {\n      \"id\": \"<uuid>\",\n      \"resposta\": \"<string>\"\n    }\n  ]\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/usuarios/validar-identificacao",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"usuarios",
+														"validar-identificacao"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "67017a98-c0dc-4a47-b953-3527c95f6a36"
+						},
+						{
+							"name": "criar-senha",
+							"item": [
+								{
+									"name": "/api/usuarios/criar-senha",
+									"id": "2eaa85ae-d292-424e-9257-01a849c96362",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"login\": \"<string>\",\n  \"senha\": \"<string>\",\n  \"confirmacaoSenha\": \"<string>\",\n  \"primeiroAcesso\": \"<boolean>\",\n  \"idRecuperacaoSenha\": \"<uuid>\",\n  \"senhaExpira\": \"<boolean>\",\n  \"idAcessoTemporario\": \"<uuid>\",\n  \"token\": \"<string>\",\n  \"localLogin\": \"<string>\",\n  \"notificacoes\": [\n    {\n      \"mensagem\": \"<string>\",\n      \"informacoesAdicionais\": {\n        \"Duis_7\": \"<string>\",\n        \"in_5\": \"<string>\",\n        \"magnab8a\": \"<string>\"\n      }\n    },\n    {\n      \"mensagem\": \"<string>\",\n      \"informacoesAdicionais\": {\n        \"sint_0c\": \"<string>\"\n      }\n    }\n  ],\n  \"mensagens\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"invalido\": \"<boolean>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/usuarios/criar-senha",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"usuarios",
+												"criar-senha"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "3544cd90-bf25-43d4-9f1a-c15cc0e13d21",
+											"name": "Success",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"login\": \"<string>\",\n  \"senha\": \"<string>\",\n  \"confirmacaoSenha\": \"<string>\",\n  \"primeiroAcesso\": \"<boolean>\",\n  \"idRecuperacaoSenha\": \"<uuid>\",\n  \"senhaExpira\": \"<boolean>\",\n  \"idAcessoTemporario\": \"<uuid>\",\n  \"token\": \"<string>\",\n  \"localLogin\": \"<string>\",\n  \"notificacoes\": [\n    {\n      \"mensagem\": \"<string>\",\n      \"informacoesAdicionais\": {\n        \"Duis_7\": \"<string>\",\n        \"in_5\": \"<string>\",\n        \"magnab8a\": \"<string>\"\n      }\n    },\n    {\n      \"mensagem\": \"<string>\",\n      \"informacoesAdicionais\": {\n        \"sint_0c\": \"<string>\"\n      }\n    }\n  ],\n  \"mensagens\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"invalido\": \"<boolean>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/usuarios/criar-senha",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"usuarios",
+														"criar-senha"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "0185dd1d-ff4d-4624-80a0-a968a6d16a11"
+						},
+						{
+							"name": "centros-custo-responsavel",
+							"item": [
+								{
+									"name": "/api/usuarios/centros-custo-responsavel",
+									"id": "4096f575-6d97-497a-9fc0-408272e3fcba",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/usuarios/centros-custo-responsavel",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"usuarios",
+												"centros-custo-responsavel"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "1d59c620-86cc-4ca3-889e-0bd6a4c9047a",
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/usuarios/centros-custo-responsavel",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"usuarios",
+														"centros-custo-responsavel"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "4d2ffc69-fd42-4a2a-b7f8-c1949995ff3f"
+						},
+						{
+							"name": "sincronizacao",
+							"item": [
+								{
+									"name": "centro-custo",
+									"item": [
+										{
+											"name": "{tipoSincronizacao}",
+											"item": [
+												{
+													"name": "/api/usuarios/sincronizacao/centro-custo/:tipoSincronizacao",
+													"id": "4205e5ba-0344-4e40-adee-9671bffe1068",
+													"protocolProfileBehavior": {
+														"disableBodyPruning": true
+													},
+													"request": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Content-Type",
+																"value": "application/json"
+															}
+														],
+														"body": {
+															"mode": "raw",
+															"raw": "{\n  \"idsCentrosCusto\": [\n    \"<uuid>\",\n    \"<uuid>\"\n  ],\n  \"dataUltimaSincronizacao\": \"<dateTime>\"\n}",
+															"options": {
+																"raw": {
+																	"headerFamily": "json",
+																	"language": "json"
+																}
+															}
+														},
+														"url": {
+															"raw": "{{baseUrl}}/api/usuarios/sincronizacao/centro-custo/:tipoSincronizacao",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"usuarios",
+																"sincronizacao",
+																"centro-custo",
+																":tipoSincronizacao"
+															],
+															"variable": [
+																{
+																	"key": "tipoSincronizacao",
+																	"value": "<string>",
+																	"description": "(Required) "
+																}
+															]
+														}
+													},
+													"response": [
+														{
+															"id": "c53b965b-1afa-4ee4-9dff-cff6db09f885",
+															"name": "Success",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Content-Type",
+																		"value": "application/json"
+																	},
+																	{
+																		"description": "Added as a part of security scheme: apikey",
+																		"key": "Authorization",
+																		"value": "<API Key>"
+																	}
+																],
+																"body": {
+																	"mode": "raw",
+																	"raw": "{\n  \"idsCentrosCusto\": [\n    \"<uuid>\",\n    \"<uuid>\"\n  ],\n  \"dataUltimaSincronizacao\": \"<dateTime>\"\n}",
+																	"options": {
+																		"raw": {
+																			"headerFamily": "json",
+																			"language": "json"
+																		}
+																	}
+																},
+																"url": {
+																	"raw": "{{baseUrl}}/api/usuarios/sincronizacao/centro-custo/:tipoSincronizacao",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"api",
+																		"usuarios",
+																		"sincronizacao",
+																		"centro-custo",
+																		":tipoSincronizacao"
+																	],
+																	"variable": [
+																		{
+																			"key": "tipoSincronizacao"
+																		}
+																	]
+																}
+															},
+															"status": "OK",
+															"code": 200,
+															"_postman_previewlanguage": "text",
+															"header": [],
+															"cookie": [],
+															"body": ""
+														}
+													]
+												}
+											],
+											"id": "679638bc-ba5a-490e-9eb9-9115d2aa4165"
+										}
+									],
+									"id": "140958c1-47c4-4560-8a91-da3ebe335a18"
+								}
+							],
+							"id": "d642f196-79ff-4f11-b645-dba2740265c9"
+						}
+					],
+					"id": "cd62b169-4750-4476-86ba-66fb16e73f3a"
+				},
+				{
+					"name": "validar-apontamentos",
+					"item": [
+						{
+							"name": "/api/validar-apontamentos",
+							"id": "1c72ee31-2673-41b1-840d-49b0bdcc7b99",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n  \"<uuid>\",\n  \"<uuid>\"\n]",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/validar-apontamentos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"validar-apontamentos"
+									]
+								}
+							},
+							"response": [
+								{
+									"id": "52c81f86-ea0e-4f0a-b41a-419540d06196",
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "Authorization",
+												"value": "<API Key>"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "[\n  \"<uuid>\",\n  \"<uuid>\"\n]",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/validar-apontamentos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"validar-apontamentos"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"id": "feba23ee-ed4e-470b-b9c2-1d253f4d900c"
+				}
+			],
+			"id": "464f1c51-7c06-48d8-b517-1e38f832acb2"
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "{{apiKey}}",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"id": "bb775cf0-7ec4-402e-a6c0-a8aec1886dfe",
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}

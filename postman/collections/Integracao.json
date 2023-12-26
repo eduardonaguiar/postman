@@ -1,0 +1,405 @@
+{
+	"info": {
+		"_postman_id": "f52e8ab5-1d80-4bd8-9729-c32bc5b34e73",
+		"name": "Integracao",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "1080076-f52e8ab5-1d80-4bd8-9729-c32bc5b34e73"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "auth",
+					"item": [
+						{
+							"name": "login",
+							"item": [
+								{
+									"name": "/api/auth/login",
+									"id": "67e50495-8713-4a8f-850d-41781dd2f023",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"identificador\": \"<uuid>\",\n  \"chave\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/auth/login",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"auth",
+												"login"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "a8fabd13-cca6-489a-b348-ae9384a97fc2",
+											"name": "Success",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"identificador\": \"<uuid>\",\n  \"chave\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/auth/login",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"auth",
+														"login"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "21fad950-94bd-4140-b182-684f2b57bdd9"
+						}
+					],
+					"id": "325c672d-b572-4e49-a0eb-24420d30ebec"
+				},
+				{
+					"name": "convocacao",
+					"item": [
+						{
+							"name": "aceite",
+							"item": [
+								{
+									"name": "/api/convocacao/aceite",
+									"id": "cc0b6d28-f667-429b-ab71-8a43c6471d83",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"cpf\": \"<string>\",\n  \"dataInicio\": \"<dateTime>\",\n  \"dataFim\": \"<dateTime>\",\n  \"horasConvocacao\": {\n    \"ticks\": \"<long>\",\n    \"days\": \"<integer>\",\n    \"hours\": \"<integer>\",\n    \"milliseconds\": \"<integer>\",\n    \"minutes\": \"<integer>\",\n    \"seconds\": \"<integer>\",\n    \"totalDays\": \"<double>\",\n    \"totalHours\": \"<double>\",\n    \"totalMilliseconds\": \"<double>\",\n    \"totalMinutes\": \"<double>\",\n    \"totalSeconds\": \"<double>\"\n  },\n  \"minutosIntrajornada\": \"<double>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/convocacao/aceite",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"convocacao",
+												"aceite"
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "286725a7-4e39-4e75-bee2-e512cf6cc7ed",
+											"name": "Success",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													},
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"cpf\": \"<string>\",\n  \"dataInicio\": \"<dateTime>\",\n  \"dataFim\": \"<dateTime>\",\n  \"horasConvocacao\": {\n    \"ticks\": \"<long>\",\n    \"days\": \"<integer>\",\n    \"hours\": \"<integer>\",\n    \"milliseconds\": \"<integer>\",\n    \"minutes\": \"<integer>\",\n    \"seconds\": \"<integer>\",\n    \"totalDays\": \"<double>\",\n    \"totalHours\": \"<double>\",\n    \"totalMilliseconds\": \"<double>\",\n    \"totalMinutes\": \"<double>\",\n    \"totalSeconds\": \"<double>\"\n  },\n  \"minutosIntrajornada\": \"<double>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/convocacao/aceite",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"convocacao",
+														"aceite"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "40ba02be-8dc0-4ac7-a608-a5ed7bf4ecd8"
+						}
+					],
+					"id": "720e0fa3-9983-47a6-9eb9-976c0079bd85"
+				},
+				{
+					"name": "escala",
+					"item": [
+						{
+							"name": "ativas",
+							"item": [
+								{
+									"name": "/api/escala/ativas",
+									"id": "d4dffe82-d91d-4a38-b2a7-68c894a30f2f",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/escala/ativas?codigoEmpresas=<string>&codigoEmpresas=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"escala",
+												"ativas"
+											],
+											"query": [
+												{
+													"key": "codigoEmpresas",
+													"value": "<string>"
+												},
+												{
+													"key": "codigoEmpresas",
+													"value": "<string>"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "c47f8b7a-ab9c-4783-a1e9-ded15e4131f2",
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/escala/ativas?codigoEmpresas=<string>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"escala",
+														"ativas"
+													],
+													"query": [
+														{
+															"key": "codigoEmpresas",
+															"value": "<string>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "40709884-9884-4913-b8f6-272017c820c5"
+						}
+					],
+					"id": "64ae393b-83ea-4a69-8cee-3a74ecf06fb5"
+				},
+				{
+					"name": "usuarios",
+					"item": [
+						{
+							"name": "permite-jornada",
+							"item": [
+								{
+									"name": "/api/usuarios/permite-jornada",
+									"id": "34698f0b-5a9d-43df-853b-543b7832e4bc",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/usuarios/permite-jornada?cpf=<string>&data=<dateTime>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"usuarios",
+												"permite-jornada"
+											],
+											"query": [
+												{
+													"key": "cpf",
+													"value": "<string>"
+												},
+												{
+													"key": "data",
+													"value": "<dateTime>"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"id": "b7f4bd11-9a83-4d68-ba7e-97934588a566",
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"description": "Added as a part of security scheme: apikey",
+														"key": "Authorization",
+														"value": "<API Key>"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/api/usuarios/permite-jornada?cpf=<string>&data=<dateTime>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"usuarios",
+														"permite-jornada"
+													],
+													"query": [
+														{
+															"key": "cpf",
+															"value": "<string>"
+														},
+														{
+															"key": "data",
+															"value": "<dateTime>"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							],
+							"id": "50d6bce5-f6ef-4691-ae5b-dcaed868807a"
+						}
+					],
+					"id": "95181d0d-f645-43c1-8940-0589011e83c1"
+				}
+			],
+			"id": "434aea25-05a5-4253-8dcc-f26a464b289e"
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "Authorization",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "{{apiKey}}",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"id": "92987603-6cee-4e4b-8efc-bedb6bd621b2",
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}
